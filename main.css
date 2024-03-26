@@ -1,0 +1,199 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding:0;
+    background-color: black;
+    overflow: hidden;
+  }
+/* Your existing CSS styles */
+
+/* CSS for the sign-up/sign-in button */
+/* CSS for the sign-up/sign-in button */
+.sign {
+    background-color: #4CAF50; /* Green background for the button */
+    color: #1b1b1b; /* Black text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded borders */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+/* CSS for forgot password and sign-in links */
+.forgot-password, .sign-in, .sign-up {
+    color: #26c00b; /* Green text color */
+    margin-top: 10px; /* Add margin space */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+/* Change color on hover for sign-in and forgot password links */
+.forgot-password:hover, .sign-in:hover,.sign-up:hover {
+    color: #45a049; /* Darker green color on hover */
+}
+
+/* CSS for the sign-up/sign-in form */
+.signup-form, .forgotpassword-form, .signin-form {
+    width: 50vh;
+    margin-top: 10px; /* Add some space between the button and the form */
+    background-color: #1b1b1b; /* Black background */
+    border-radius: 10px; /* Rounded borders */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.forgotpassword-form input[type="text"],
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+    display: block; /* Display input fields as block elements */
+    margin-bottom: 10px; /* Add space between each element */
+    width: calc(100% - 40px); /* Make input fields width 100% minus padding */
+    padding: 10px; /* Add padding to input fields */
+    border-radius: 5px; /* Rounded borders for input fields */
+    background-color: black; /* Black background for input fields */
+    color: #4CAF50; /* Green text color for input text */
+    border: none; /* Remove input field border */
+}
+
+.signup-form button,
+.forgotpassword-form button,
+.signin-form button {
+    display: block; /* Display button as a block element */
+    margin-bottom: 10px; /* Add space between input fields and button */
+    width: calc(100% - 40px); /* Make button width 100% minus padding */
+    padding: 10px; /* Add padding to button */
+    border-radius: 5px; /* Rounded borders for button */
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.signup-form button:hover,
+.forgotpassword-form button:hover,
+.signin-form button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+
+
+
+  
+.main{
+    /* The image used */
+   background-image: url("mainimg.webp");
+  
+    /* Full height */
+   height: 100%; 
+   margin: 0;
+  
+    /* Center and scale the image nicely */
+   position:relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+   float:top;
+   box-shadow: 100px 100px 150px #82269b;
+  }
+.hopex{
+  margin: 0;
+  padding: 0;
+  width:50%;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  position: absolute; /* Position the div absolutely */
+        top: 35%; 
+        left: 25%;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  
+}
+.main:hover{
+    cursor: context-menu;
+}
+
+.letsgo{
+    height: 35px;
+    width: 150px;
+    background-color:rgb(19, 226, 19);
+    position:absolute;
+            top: 50%;
+            left: 45%;
+    
+    font-size: 25px;
+    text-align: center;
+
+}
+.letsgo:hover{
+    background-color: rgb(29, 174, 29);
+    height: 35px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.about{
+    height: 100%;
+    width:100%;
+    padding-top: 30px;
+}
+.aboutinner{
+    height: 100%;
+    width: 50%;
+}
+.aboutinner h1{
+    padding-left: 25px;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(22, 245, 22);
+}
+.aboutinner p{
+    color:white;
+    padding-left:30px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img1{
+    height: 100%;
+    width: 25%;
+    background-image: url("mainimg.webp");
+    background-size: auto;
+    float: right;
+}
+.img2{
+    height: 100%;
+    width: 25%;
+    background-image: url("mainimg.webp");
+    background-size: auto;
+    float:right;
+}
+@media (max-width: 768px){
+    .letsgo{
+        position: absolute;
+            left:40%
+    }
+    .aboutinner{
+        height: 50%;
+        width:100%;
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: none;
+    }
+    
+}
+@media (max-width: 424px){
+   .letsgo{
+    position:absolute;
+        top:55%;
+        left:33%;
+   }
+}
+@media (max-width: 766px) and (min-width: 425px){
+    .letsgo{
+        position: absolute;
+            top: 55%;
+            left:33.5%;
+    }
+}
